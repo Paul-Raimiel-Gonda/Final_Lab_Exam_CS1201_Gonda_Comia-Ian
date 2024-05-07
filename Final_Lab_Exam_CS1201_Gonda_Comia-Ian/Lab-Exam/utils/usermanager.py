@@ -1,5 +1,7 @@
+from user import User
+
 class UserManager:
-    def __init__(self, username, password) -> None:
+    def __init__(self, username, password):
         self.username = username
         self.password = password
         self.user = {}
@@ -33,7 +35,8 @@ class UserManager:
                         self.user[username] = {"password": password}
                         print("Sucessfully registered user")
             except ValueError:
-                 print(f"Invalid input")
+                print(f"Invalid input")
+            
 
 
     def login(self, username, password):  
@@ -45,7 +48,7 @@ class UserManager:
                 
                 
             except ValueError:
-                 print(f"Invalid input")
+                print(f"Invalid input")
 
             
 

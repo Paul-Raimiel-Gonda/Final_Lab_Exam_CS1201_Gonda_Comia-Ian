@@ -30,10 +30,10 @@ class UserManager:
                 if len(username) > 5:
                     if len(password) < 8:
                         print("Username cannot be less than 4 characters")
-                        break
+                        break                   
                     if len(password) > 8:
-                        self.user[username] = {"password": password}
-                        print("Sucessfully registered user")
+                        print("Sucessfully registered user") 
+                        self.user[username] = {"password": password} 
             except ValueError:
                 print(f"Invalid input")
             
